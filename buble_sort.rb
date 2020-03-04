@@ -45,8 +45,3 @@ arr2=["tahir","am","i"]
 bubble_sort_by(arr2) do |left,right|
 left.length-right.length
 end
-
-
-
-
-
