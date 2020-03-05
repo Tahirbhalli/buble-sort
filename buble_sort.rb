@@ -17,14 +17,14 @@ def buble_sort(arr)
   arr
 end
 arr = buble_sort(arr)
-
 arr.each { |x| print(x) }
 puts "\n"
 def bubble_sort_by(arr)
   (arr.length - 1).times do |i|
     (arr.length - i - 1).times do |j|
       result = yield(arr[j],arr[j + 1])
-      next unless result.positive?
+      next unless result. positive?
+      
       temp = arr[j]
       arr[j] = arr[j + 1]
       arr[j + 1] = temp
@@ -32,7 +32,7 @@ def bubble_sort_by(arr)
   end
   arr
 end
-arr2 = ["tahir", "am", "i"]
+arr2 = ['tahir', 'am', 'i']
 
 bubble_sort_by(arr2) do |left, right|
   left.length - right.length
