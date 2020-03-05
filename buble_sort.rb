@@ -32,9 +32,8 @@ def bubble_sort_by(arr)
   end
   arr
 end
-arr2 = ["tahir", "am", "i"]
 
-bubble_sort_by(arr2) do |left, right|
+arr2 = bubble_sort_by( ["hi", "hello", "hey"] ) do |left, right|
   left.length - right.length
 end
 arr2.each { |i| print(i + ' ') }
