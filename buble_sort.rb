@@ -18,12 +18,8 @@ def buble_sort(arr)
 end
 arr = buble_sort(arr)
 
-arr.each { |x|
-  print(x)
-}
-
+arr.each { |x| print(x) }
 puts "\n"
-
 def bubble_sort_by(arr)
   (arr.length - 1).times do |i|
     (arr.length - i - 1).times do |j|
@@ -41,6 +37,4 @@ arr2 = ["tahir", "am", "i"]
 bubble_sort_by(arr2) do |left, right|
   left.length - right.length
 end
-
-
-arr2.each {|i| print(i + ' ')}
+arr2.each { |i| print(i + ' ') }
