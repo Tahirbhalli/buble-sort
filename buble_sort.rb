@@ -1,22 +1,22 @@
-arr= [2, 6, 1, 8, 12, 4, 9]
+arr = [2, 6, 1, 8, 12, 4, 9]
 def buble_sort(arr)
-  i=0
-  a=0
+  i = 0
+  a = 0
   while a<arr.length
-    i=1
+    i = 1
     while i < arr.length-a
       if arr[i-1] > arr[i]
-        temp=arr[i]
-        arr[i]=arr[i-1]
-        arr[i-1]=temp
+        temp = arr[i]
+        arr[i] = arr[i-1]
+        arr[i-1] = temp
       end
-      i=i+1
+      i = i+1
     end
-      a=a+1
+      a = a+1
     end
   return arr
 end
-arr= buble_sort(arr)
+arr = buble_sort(arr)
 
 
 for element in arr
@@ -27,16 +27,16 @@ puts "\n"
 def bubble_sort_by(r)
   (r.length-1).times do |i|
     (r.length-i-1).times do |j|
-      result=yield(r[j],r[j+1])
+      result = yield(r[j],r[j+1])
         next unless result.positive?
-        temp=r[j]
-        r[j]=r[j+1]
-        r[j+1]=temp
+        temp = r[j]
+        r[j] = r[j+1]
+        r[j+1] = temp
     end
   end
   return r
 end
-arr2= ["tahir", "am", "i"]
+arr2 = ["tahir", "am", "i"]
 
 bubble_sort_by(arr2) do |left, right|
   left.length-right.length
