@@ -17,7 +17,7 @@ def buble_sort(arr)
   arr
 end
 arr = buble_sort(arr)
-arr.each { |x| print(x) }
+arr.each { |x| print(x.to_s + ' ') }
 puts "\n"
 def bubble_sort_by(arr)
   (arr.length - 1).times do |i|
