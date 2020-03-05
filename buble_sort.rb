@@ -10,9 +10,9 @@ def buble_sort(arr)
         arr[i] = arr[i - 1]
         arr[i - 1] = temp
       end
-      i +=  1
+      i += 1
     end
-      a +=  1
+    a += 1
   end
   arr
 end
@@ -25,13 +25,13 @@ arr.each { |x|
 puts "\n"
 
 def bubble_sort_by(arr)
-  (arr.length-1).times do |i|
-    (arr.length-i-1).times do |j|
-      result = yield(arr[j],arr[j+1])
-        next unless result.positive?
-        temp = arr[j]
-        arr[j] = arr[j+1]
-        arr[j+1] = temp
+  (arr.length - 1).times do |i|
+    (arr.length - i - 1).times do |j|
+      result = yield(arr[j],arr[j + 1])
+      next unless result.positive?
+      temp = arr[j]
+      arr[j] = arr[j + 1]
+      arr[j + 1] = temp
     end
   end
   arr
