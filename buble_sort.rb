@@ -1,9 +1,7 @@
 arr=[2,6,1,8,12,4,9]
-
-def bublesort(arr)
+def buble_sort(arr)
     i=0
     a=0
-    
     while a<arr.length
         i=1
         while i < arr.length-a
@@ -16,16 +14,16 @@ def bublesort(arr)
         end
         a=a+1
     end
-  
+  return arr
 end
 
-bublesort(arr)
+arr=buble_sort(arr)
 
 
 for element in arr
     print (element.to_s+" ")
 end
-puts "\n\n"
+puts "\n"
 
 def bubble_sort_by(r)
     (r.length-1).times do |i|
@@ -37,11 +35,13 @@ def bubble_sort_by(r)
             r[j+1]=temp
         end
     end
-    for element in r
-        print (element.to_s+" ")
-    end
+  return r
 end
 arr2=["tahir","am","i"]
+
 bubble_sort_by(arr2) do |left,right|
 left.length-right.length
+end
+for element in arr2
+    print (element.to_s+" ")
 end
