@@ -32,7 +32,7 @@ def bubble_sort_by(arr)
   end
   arr
 end
-arr2 = %W['tahir', 'am', 'i']
+arr2 = %W[tahir am i]
 
 bubble_sort_by(arr2) do |left, right|
   left.length - right.length
